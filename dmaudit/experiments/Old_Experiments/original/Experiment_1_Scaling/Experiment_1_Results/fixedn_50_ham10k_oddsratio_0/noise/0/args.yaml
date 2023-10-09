@@ -1,0 +1,52 @@
+DATASET:
+  ARTIFICIAL_SETS_TO_RUN: [('/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/data/Processed_Data/HAM10k/Natural/HAM10k-resized-256x256', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/data/Processed_Data/HAM10k/Synthetic/noise'), ('/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/data/Processed_Data/HAM10k/Natural/HAM10k-resized-256x256', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/data/Processed_Data/HAM10k/Synthetic/dark'), ('/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/data/Processed_Data/HAM10k/Natural/HAM10k-resized-256x256', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/data/Processed_Data/HAM10k/Synthetic/global_compression_quality_20'), ('/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/data/Processed_Data/HAM10k/Natural/HAM10k-resized-256x256', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/data/Processed_Data/HAM10k/Synthetic/global_compression_quality_40'), ('/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/data/Processed_Data/HAM10k/Natural/HAM10k-resized-256x256', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/data/Processed_Data/HAM10k/Synthetic/global_compression_quality_60'), ('/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/data/Processed_Data/HAM10k/Natural/HAM10k-resized-256x256', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/data/Processed_Data/HAM10k/Synthetic/global_compression_quality_80')]
+  K_FOLDS: 3
+  NAME: HAM10k
+  RESIZE_SHAPE: (224, 224)
+  RUN_DFS:
+    FILENAMES: ['/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_50_ham10k_oddsratio_0.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_750_ham10k_oddsratio_0.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_250_ham10k_oddsratio_0.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_250_ham10k_oddsratio_2.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_50_ham10k_oddsratio_2.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_750_ham10k_oddsratio_2.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_1000_ham10k_oddsratio_2.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_500_ham10k_oddsratio_0.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_500_ham10k_oddsratio_-1.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_500_ham10k_oddsratio_2.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_1000_ham10k_oddsratio_0.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_250_ham10k_oddsratio_1.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_750_ham10k_oddsratio_1.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_750_ham10k_oddsratio_-1.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_1000_ham10k_oddsratio_0.33.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_50_ham10k_oddsratio_1.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_50_ham10k_oddsratio_0.50.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_750_ham10k_oddsratio_3.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_750_ham10k_oddsratio_0.50.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_50_ham10k_oddsratio_3.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_250_ham10k_oddsratio_3.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_250_ham10k_oddsratio_0.50.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_500_ham10k_oddsratio_0.33.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_50_ham10k_oddsratio_-1.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_500_ham10k_oddsratio_1.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_250_ham10k_oddsratio_-1.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_1000_ham10k_oddsratio_0.50.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_1000_ham10k_oddsratio_3.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_50_ham10k_oddsratio_0.33.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_750_ham10k_oddsratio_0.33.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_1000_ham10k_oddsratio_-1.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_1000_ham10k_oddsratio_1.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_500_ham10k_oddsratio_3.00.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_250_ham10k_oddsratio_0.33.csv', '/Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs/fixedn_500_ham10k_oddsratio_0.50.csv']
+    FOLDER_PATH: /Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Train_DFs
+    FOLD_COLUMN: fold
+    IMAGE_NAME_COLUMN: image_key
+    LABEL_COLUMN: artifact
+    SELECT_IMAGES_PATH_COLUMN: artifact
+  TRAIN_VAL_PERCENTAGES: [0.9, 0.1]
+EXPERIMENT:
+  NAME: Experiment_1_Scaling
+LOG_PER_N_BATCHES: 10
+MODEL:
+  ARCH_NAME: densenet121
+  NUM_LAST_LAYER_OUTPUTS: 1
+  PRETRAINED: True
+  WEIGHTS_PATH: None
+OUTPUT:
+  COMBINE_BY_DF: True
+  SAVE_BEST_MODEL: True
+  SAVE_PATH: /Users/mitchell/Desktop/DM_AUDIT/dm-audit/dmaudit/experiments/Experiment_1_Scaling/Experiment_1_Results
+SYSTEM:
+  BASEPATH: None
+  HAM_ARTIFACT_EXTENSION: None
+  HAM_EXTENSION: None
+  HAM_NATURAL_EXTENSION: None
+  NUM_GPUS: 1
+  NUM_WORKERS: 4
+  PROCESSED_DATA_PATH: None
+  RAW_DATA_PATH: None
+  SEED: 123
+TEST:
+  BATCH_SIZE: 128
+TRAIN:
+  BATCH_SIZE: 128
+  BINARY_TARGET: True
+  CRITERION: ce
+  DO_DRY_RUN: False
+  EVAL_ONLY: False
+  LR: 0.001
+  MOMENTUM: 0.9
+  NUM_EPOCHS: 10
+  OPTIMIZER: SGD
+  PROFILE: False
+  SCHEDULER: LINEAR_LR_DECAY
+  SCHEDULER_GAMMA: 0.7
+  VALIDATION_INTERVAL_N_STEPS: 100
+  WEIGHT_DECAY: 0.0005

@@ -1,0 +1,59 @@
+DATASET:
+  ARTIFICIAL_SETS_TO_RUN: [('C:\\Users\\Mitchell\\Desktop\\dmaudit\\dm-audit\\dmaudit\\data\\Processed_Data\\HAM10k\\Natural/HAM10k-resized-256x256', 'C:\\Users\\Mitchell\\Desktop\\dmaudit\\dm-audit\\dmaudit\\data\\Processed_Data\\HAM10k\\Synthetic\\global_compression_quality_30'), ('C:\\Users\\Mitchell\\Desktop\\dmaudit\\dm-audit\\dmaudit\\data\\Processed_Data\\HAM10k\\Natural/HAM10k-resized-256x256', 'C:\\Users\\Mitchell\\Desktop\\dmaudit\\dm-audit\\dmaudit\\data\\Processed_Data\\HAM10k\\Synthetic\\global_compression_quality_50'), ('C:\\Users\\Mitchell\\Desktop\\dmaudit\\dm-audit\\dmaudit\\data\\Processed_Data\\HAM10k\\Natural/HAM10k-resized-256x256', 'C:\\Users\\Mitchell\\Desktop\\dmaudit\\dm-audit\\dmaudit\\data\\Processed_Data\\HAM10k\\Synthetic\\global_compression_quality_70'), ('C:\\Users\\Mitchell\\Desktop\\dmaudit\\dm-audit\\dmaudit\\data\\Processed_Data\\HAM10k\\Natural/HAM10k-resized-256x256', 'C:\\Users\\Mitchell\\Desktop\\dmaudit\\dm-audit\\dmaudit\\data\\Processed_Data\\HAM10k\\Synthetic\\global_compression_quality_90'), ('C:\\Users\\Mitchell\\Desktop\\dmaudit\\dm-audit\\dmaudit\\data\\Processed_Data\\HAM10k\\Natural/HAM10k-resized-256x256', 'C:\\Users\\Mitchell\\Desktop\\dmaudit\\dm-audit\\dmaudit\\data\\Processed_Data\\HAM10k\\Synthetic\\noise'), ('C:\\Users\\Mitchell\\Desktop\\dmaudit\\dm-audit\\dmaudit\\data\\Processed_Data\\HAM10k\\Natural/HAM10k-resized-256x256', 'C:\\Users\\Mitchell\\Desktop\\dmaudit\\dm-audit\\dmaudit\\data\\Processed_Data\\HAM10k\\Synthetic\\dark')]
+  AUGMENTATION: basic
+  K_FOLDS: 3
+  NAME: HAM10k
+  RESIZE_SHAPE: (224, 224)
+  RUN_DFS:
+    ARTIFACT_COLUMN: artifact
+    FILENAMES: ['C:\\Users\\Mitchell\\Desktop\\dmaudit\\dm-audit\\dmaudit\\experiments/Experiment_4_MI_vs_CMI/Experiment_4_Train_DFs\\fixedn_1000_ham10k_oddsratio_-1.00.csv', 'C:\\Users\\Mitchell\\Desktop\\dmaudit\\dm-audit\\dmaudit\\experiments/Experiment_4_MI_vs_CMI/Experiment_4_Train_DFs\\fixedn_1000_ham10k_oddsratio_0.19.csv', 'C:\\Users\\Mitchell\\Desktop\\dmaudit\\dm-audit\\dmaudit\\experiments/Experiment_4_MI_vs_CMI/Experiment_4_Train_DFs\\fixedn_1000_ham10k_oddsratio_1.00.csv', 'C:\\Users\\Mitchell\\Desktop\\dmaudit\\dm-audit\\dmaudit\\experiments/Experiment_4_MI_vs_CMI/Experiment_4_Train_DFs\\fixedn_1000_ham10k_oddsratio_2.00.csv', 'C:\\Users\\Mitchell\\Desktop\\dmaudit\\dm-audit\\dmaudit\\experiments/Experiment_4_MI_vs_CMI/Experiment_4_Train_DFs\\fixedn_1000_ham10k_oddsratio_4.00.csv', 'C:\\Users\\Mitchell\\Desktop\\dmaudit\\dm-audit\\dmaudit\\experiments/Experiment_4_MI_vs_CMI/Experiment_4_Train_DFs\\fixedn_1000_ham10k_oddsratio_9.00.csv']
+    FOLDER_PATH: C:\Users\Mitchell\Desktop\dmaudit\dm-audit\dmaudit\experiments/Experiment_4_MI_vs_CMI/Experiment_4_Train_DFs
+    FOLD_COLUMN: fold
+    IMAGE_NAME_COLUMN: image_id
+    SELECT_IMAGES_PATH_COLUMN: artifact
+    Y_LABEL_COLUMN: is_malignant
+  TRAIN_VAL_PERCENTAGES: [0.9, 0.1]
+EXPERIMENT:
+  NAME: Experiment_4_Dx
+LOG_PER_N_BATCHES: 10
+MODEL:
+  ARCH_NAMES: ['swin_t']
+  NUM_LAST_LAYER_OUTPUTS: 2
+  PRETRAINED: True
+  WEIGHTS_PATH: None
+OUTPUT:
+  COMBINE_BY_DF: True
+  SAVE_BEST_MODEL: True
+  SAVE_PATH: C:\Users\Mitchell\Desktop\dmaudit\dm-audit\dmaudit\experiments/Experiment_4_MI_vs_CMI/Experiment_4_Dx_Results
+SYSTEM:
+  BASEPATH: None
+  HAM_ARTIFACT_EXTENSION: None
+  HAM_EXTENSION: None
+  HAM_NATURAL_EXTENSION: None
+  NUM_GPUS: 1
+  NUM_WORKERS: 4
+  PROCESSED_DATA_PATH: None
+  RAW_DATA_PATH: None
+  SEED: 123
+TEST:
+  BATCH_SIZE: 128
+  BINARY_TARGET: True
+  DO_DRY_RUN: False
+TRAIN:
+  BALANCE_CLASSES: True
+  BATCH_SIZE: 128
+  BINARY_TARGET: True
+  CRITERION: ce
+  DO_DRY_RUN: False
+  EVAL_ONLY: False
+  LR: 5e-05
+  MOMENTUM: (0.9, 0.999)
+  NUM_EPOCHS: 10
+  OPTIMIZER: AdamW
+  PROFILE: False
+  RUN_ARTIFACT: False
+  RUN_Y_PREDICTION: True
+  SCHEDULER: LINEAR_LR_DECAY
+  SCHEDULER_GAMMA: 0.7
+  VALIDATION_INTERVAL_N_STEPS: 100
+  WEIGHT_DECAY: 0.01
