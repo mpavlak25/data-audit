@@ -4,7 +4,7 @@
 We seek to audit at the dataset level to develop targeted hypotheses on the bias downstream models will inherit. We focus on identifying potential shortcuts, and define two metrics we term “utility” and “detectability” respectively. Utility measures how much information knowing an attribute conveys about the task label. For detectability, we seek to measure how well a downstream model could extract the values of the attribute from the image set, excluding task related information. 
 
 
-#### (MICCAI 2023 paper link): https://link.springer.com/chapter/10.1007/978-3-031-43898-1_43
+#### MICCAI 2023 paper link: https://link.springer.com/chapter/10.1007/978-3-031-43898-1_43
 
 #### Code Information:
 
